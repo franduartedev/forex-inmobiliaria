@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Inmobiliaria</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+  <h1 class="logo">Forex Inmobiliaria</h1>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="menu">
+    <ul id="menu-links">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Propiedades</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+    <section class="hero">
+        <h2>Encontrá tu hogar ideal</h2>
+        <p>Las mejores propiedades al mejor precio</p>
+        <a href="#">Ver propiedades</a>
+    </section>
+
+    <main>
+
+        <!-- PROPIEDADES -->
+        <section class="propiedades">
+            <h2>Todas las propiedades</h2>
+
+            <div class="grid-propiedades">
+
+                <!-- CARD 1 -->
+                <div class="card">
+                    <img src="propiedad1.webp" alt="Casa moderna en venta">
+                    <div class="card-content">
+                        <h3>Casa moderna</h3>
+                        <p class="ubicacion">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Calle 123, Palermo, Buenos Aires
+                        </p>
+                        <p class="precio">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            USD 120.000
+                        </p>
+                        <a href="#" class="btn-card">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card">
+                    <img src="propiedad2.webp" alt="Departamento céntrico">
+                    <div class="card-content">
+                        <h3>Departamento céntrico</h3>
+                        <p class="ubicacion">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Calle 44, Avellaneda, Buenos Aires
+                        </p>
+                        <p class="precio">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            USD 85.000
+                        </p>
+                        <a href="#" class="btn-card">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card">
+                    <img src="propiedad3.webp" alt="Casa con jardín">
+                    <div class="card-content">
+                        <h3>Casa con jardín</h3>
+                        <p class="ubicacion">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Calle 299, Belgrano, Buenos Aires
+                        </p>
+                        <p class="precio">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            USD 90.000
+                        </p>
+                        <a href="#" class="btn-card">Ver detalles</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" class="button" value="Enviar">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Forex Inmobiliaria. Todos los derechos reservados.</p>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
