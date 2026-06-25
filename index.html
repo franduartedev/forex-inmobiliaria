@@ -26,15 +26,16 @@
 
   <nav class="menu">
     <ul id="menu-links">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Propiedades</a></li>
-      <li><a href="#">Contacto</a></li>
+    <li><a href="#inicio">Inicio</a></li>
+<li><a href="#propiedades">Propiedades</a></li>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
 </header>
 
 <!-- HERO -->
-    <section class="hero">
+    <section class="hero" id="inicio">
         <h2>Encontrá tu hogar ideal</h2>
         <p>Las mejores propiedades al mejor precio</p>
         <a href="#">Ver propiedades</a>
@@ -43,7 +44,7 @@
     <main>
 
         <!-- PROPIEDADES -->
-        <section class="propiedades">
+        <section class="propiedades" id="propiedades">
             <h2>Todas las propiedades</h2>
 
             <div class="grid-propiedades">
@@ -117,8 +118,42 @@
             </div>
         </section>
 
+                <!-- SERVICIOS -->
+        <section class="servicios" id="servicios">
+            <h2>Nuestros servicios</h2>
+            <p class="servicios-intro">
+                Te acompañamos en cada etapa para comprar, vender o alquilar tu propiedad con seguridad y asesoramiento personalizado.
+            </p>
+
+            <div class="grid-servicios">
+                <article class="servicio-card">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <h3>Venta de propiedades</h3>
+                    <p>Publicamos y promocionamos tu propiedad para llegar a compradores reales.</p>
+                </article>
+
+                <article class="servicio-card">
+                    <i class="fa-solid fa-key"></i>
+                    <h3>Alquileres</h3>
+                    <p>Gestionamos alquileres de casas, departamentos y locales comerciales.</p>
+                </article>
+
+                <article class="servicio-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Tasaciones</h3>
+                    <p>Evaluamos tu propiedad según ubicación, estado, mercado y demanda actual.</p>
+                </article>
+
+                <article class="servicio-card">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>Asesoramiento</h3>
+                    <p>Te guiamos durante todo el proceso para tomar decisiones claras y seguras.</p>
+                </article>
+            </div>
+        </section>
+
         <!-- CONTACTO -->
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <h2>Contacto</h2>
             <form>
                 <label for="name">Nombre:</label>
