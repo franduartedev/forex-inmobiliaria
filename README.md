@@ -36,8 +36,4 @@ https://franduartedev.github.io/forex-inmobiliaria/
 
 El objetivo de este proyecto es practicar maquetación web, diseño responsive, estructura semántica y presentación visual de una landing page orientada a un negocio real.
 
-## Autor
 
-Francisco Duarte
-GitHub: https://github.com/franduartedev
-LinkedIn: https://www.linkedin.com/in/francisco-duarte-dev/
