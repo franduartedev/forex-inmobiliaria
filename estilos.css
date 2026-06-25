@@ -323,6 +323,21 @@ i {
   color: var(--color-secondary);
 }
 
+.detalles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--color-muted);
+  margin-bottom: 14px;
+}
+
+.detalles span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   header {
