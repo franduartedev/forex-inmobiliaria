@@ -221,6 +221,21 @@ header {
   margin-bottom: 10px;
 }
 
+.detalles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--color-muted);
+  margin-bottom: 14px;
+}
+
+.detalles span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .precio {
   font-size: 20px;
   font-weight: bold;
@@ -244,17 +259,6 @@ header {
   transform: translateY(-2px);
 }
 
-/* FORMULARIO */
-.contacto {
-  background-color: #ffffff;
-}
-
-.contacto h2 {
-  text-align: center;
-  margin-bottom: 25px;
-  color: var(--color-primary);
-  font-size: 34px;
-}
 /* SERVICIOS */
 .servicios {
   background: var(--color-surface);
@@ -312,16 +316,106 @@ header {
   font-size: 15px;
 }
 
+/* CONTACTO */
+.contacto {
+  background-color: #ffffff;
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+  font-size: 34px;
+}
+
+.contacto-intro {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 18px;
+}
+
+.contacto-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.contacto-info {
+  background: var(--color-primary);
+  color: #ffffff;
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.contacto-info h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.contacto-info p {
+  color: #e5e7eb;
+  margin-bottom: 25px;
+}
+
+.contacto-info ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.contacto-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacto-info i {
+  color: var(--color-secondary);
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25d366;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  background: #1ebe5d;
+}
+
+/* FORMULARIO */
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   max-width: 520px;
-  margin: 0 auto 60px;
+  margin: 0;
   padding: 40px;
   background-color: var(--color-surface);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
+  height: 100%;
+}
+
+label {
+  font-weight: 700;
+  color: var(--color-primary);
 }
 
 input,
@@ -377,21 +471,6 @@ footer {
 i {
   margin-right: 6px;
   color: var(--color-secondary);
-}
-
-.detalles {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  font-size: 14px;
-  color: var(--color-muted);
-  margin-bottom: 14px;
-}
-
-.detalles span {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
 }
 
 /* RESPONSIVE */
@@ -450,9 +529,20 @@ i {
     gap: 24px;
   }
 
+  .contacto-contenedor {
+    grid-template-columns: 1fr;
+  }
 
+  .contacto-info {
+    padding: 30px;
+  }
 
   form {
+    max-width: 100%;
     padding: 28px;
+  }
+
+  footer {
+    margin-top: 20px;
   }
 }
